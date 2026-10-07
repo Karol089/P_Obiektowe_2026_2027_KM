@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main() {
+
+        // Ten plik zawiera przykłady prezentowane podczas zajec
+
         /*
         // wypisywanie danych
         String imie = "Anna";
