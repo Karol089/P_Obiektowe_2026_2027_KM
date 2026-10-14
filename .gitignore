@@ -1,4 +1,5 @@
-*/out/
+# Ignore editor created and compiled files & folders
+**/out/
 out/
 .idea/
 *.class
