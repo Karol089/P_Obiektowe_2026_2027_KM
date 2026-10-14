@@ -20,7 +20,38 @@ public class Main {
         System.out.println(book3.publicationYear);*/
 
         // Zadanie 4
+        /*Car car1 = new Car("Volkzvagen", "Golf", 2025, 45000);
+        car1.showInfo();
+        car1.drive(20000);
+        car1.drive(-20000);
+        car1.showInfo();*/
 
+        // Zadanie 5
+        /*Car carOriginal = new Car("Volkzvagen", "Golf", 2025, 45000);
+        Car carCopy = new Car(carOriginal);
+        carCopy.showInfo();
+        System.out.println(carOriginal == carCopy);*/
+
+        // Zadanie 6
+        /*Person first = new Person("Anna");
+        Person second = first;
+        first.introduceYourself();
+        second.name = "Jan";
+        first.introduceYourself();
+        System.out.println(first == second);*/
+        // Powstał 1 obiekt
+        // Instieją dwie referencje
+        // Zmiana widoczna w obu, ponieważ są to referencje do tego samego obiektu
+
+        // Zadanie 7
+        /*Person first = new Person("Anna");
+        Person second = first;
+        Person third = new Person(first);
+        System.out.println(first == second);
+        System.out.println(first == third);*/
+
+        // Zadanie 8
+        
 
 
         // example presentation
