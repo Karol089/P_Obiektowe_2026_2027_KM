@@ -1,0 +1,13 @@
+1. studentName w klasie Student powinno być instancyjne, ponieważ każdemu studentowi przypisujemy inne imię
+
+2. numberOfStudents w klasie Student powinno być statyczne, ponieważ nie odnosi się do pojedynczego obiektu, a raczej przechowuje informacje istotne z perspektywy całej klasy
+
+3. PI w klasie matematycznej powinno być statyczne, ponieważ jest to wartość stała dla wszelkich metod / obiektów
+
+4. balance w klasie BankAccount powinno być instancyjne, ponieważ każde konto posiada indywidualne saldo
+
+5. calculateVat(double price) w bestanowej klasie pomocniczej powinno być statyczne, aby mogło być dostępne bez konieczności tworzenia zbędnych obiektów
+
+6. carMileage w klasie Car powinno być instancyjne, ponieważ jest to cecha indywidualna dla poszczególnych samochodów
+
+7. MAX_LOGIN_ATTEMPTS w klasie LoginPolicy powinno być statyczne, ponieważ jest to wartość stała niezależna od poszczególnych obiektów
