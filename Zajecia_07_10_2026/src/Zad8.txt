@@ -1,0 +1,30 @@
+Propozycja klasy samochó dla różnych systemów
+
+
+
+Zestaw informacji ważny dla:
+
+1. Wypożyczalni samochodów:
+- numerRejestracyjny
+- przebieg
+- marka
+- model
+- spalanie
+- cena za godzine
+- czy wypożyczony
+
+2. Gry wyścigowej
+- rozmiar
+- prędkość
+- aerodynamika
+- zwrotność
+
+3. Warsztatu samochodowego:
+- marka
+- model
+- lista usterek
+- koszt naprawy
+
+
+Nie istnieje jedna poprawna klasa "Samochod", ponieważ dla każdego systemu będzie istotny inny
+zestaw informacji dotyczący fizycznego samochodu.

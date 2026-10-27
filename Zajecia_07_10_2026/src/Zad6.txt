@@ -1,0 +1,31 @@
+Klasa: Książka
+
+Stan:
+- tytuł
+- autor
+- ISBN
+- rok wydania
+- czy wypożyczona
+- data wypożyczenia
+
+Odpowiedzialności:
+- modyfikowanie daty wypożyczenia
+- zmienianie stanu wypożyczenia
+
+
+Klasa: Czytelnik
+
+Stan:
+- imię
+- nazwisko
+- numer karty bibliotecznej
+- lista wypożyczonych książek
+
+Odpowiedzialności:
+- dodawanie książek do listy wypożyczonych
+
+
+
+Zależności:
+- czytelnik może wypożyczyć książkę i przechowuje listę wypożyczonych książek
+

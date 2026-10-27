@@ -1,0 +1,67 @@
+Kino
+
+
+Klasa: Klient
+
+Stan:
+- imię
+- nazwisko
+- wiek
+- lista zakupionych biletów
+
+Odpowiedzialności:
+- kupowanie biletów
+
+
+Klasa: Film
+- tytuł
+- reżyser
+- czas trwania
+- ograniczenia wiekowe
+- gatunek
+
+Odpowiedzialności:
+-
+
+
+Klasa: Sala
+
+Stan:
+- identyfikator
+- liczba wolnych miejsc
+- czy zajeta
+- wyświetlany film
+
+Odpowiedzialności:
+- zmienianie wyświetlanego filmu
+- zmienianie stanu zajęta/wolna
+
+
+Klasa: Bilet
+
+Stan:
+- na jaki film
+- data i czas seansu
+- numer sali
+- cena
+
+Odpowiedzialności:
+- ustalanie i aktualizacja daty i czasu seansu
+- ustalanie i modyfikacja ceny
+
+
+Odpowiedzi na pytania:
+1.
+Klient powiniem wiedzieć o filmie i bilecie
+Film powinien wiedzieć o sali
+Bilet powinien wiedziec o filmie i sali
+
+2.
+Nie znajduję nieodpowiednio przypisanej odpowiedzialności
+
+3.
+Świadomie pomijam między innymi wymiray sali, wzrost klienta, kolor biletu, kadrę filmu, itp.
+
+4.
+Informacje te są zbędne zarówno z punktu widzenia widza/klienta jak i zarządu kina nie będąc przy tym
+integralnymi dla działania systemu, zatem ich przechowywanie i przetwarzanie jest zbędne.
