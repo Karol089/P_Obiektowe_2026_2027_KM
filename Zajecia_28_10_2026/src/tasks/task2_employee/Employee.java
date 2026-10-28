@@ -20,4 +20,9 @@ public class Employee extends Person {
                 this.lastName,
                 this.position);
     }
+
+    public String showInformation(){
+        return "First name: %s \nLast name: %s \nPosition: %s \n".formatted(
+                this.getFirstName(), this.lastName, this.position);
+    }
 }
