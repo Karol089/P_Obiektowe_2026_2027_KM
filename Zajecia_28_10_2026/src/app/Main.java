@@ -3,7 +3,7 @@ package app;
 import tasks.task2_employee.Employee;
 import tasks.task2_employee.Manager;
 
-import tasks.task3.Car;
+// import tasks.task3.Car; // collision with task 12
 
 import tasks.task4.C;
 
@@ -29,6 +29,11 @@ import tasks.task10.Report;
 
 import tasks.task11.Person;
 import tasks.task11.Student;
+
+import tasks.task12.Car;
+import tasks.task12.Motorcycle;
+import tasks.task12.Truck;
+import tasks.task12.Vehicle;
 
 public class Main {
     public static void main(String[] args) {
@@ -97,9 +102,19 @@ public class Main {
         person1.showInformation();
         student1.showInformation();*/
 
-        // Zad 12
+        // Zad 12 - model B
+        /*Vehicle vehicle1 = new Vehicle(
+                "Volksvagen", "prototype 1", 4, 500);
+        Car car1 = new Car(
+                "Volksvagen", "Golf", 4, 1500, 4, 30);
+        Motorcycle motor1 = new Motorcycle(
+                "BWM", "Idk any", 2, 500, 1);
+        Truck truck1 = new Truck(
+                "Audi", "prototype 1", 4, 500, 12);
 
-
-
+        vehicle1.drive();
+        car1.drive();
+        motor1.drive();
+        truck1.drive();*/
     }
 }
