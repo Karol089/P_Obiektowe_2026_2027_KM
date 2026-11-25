@@ -1,34 +1,36 @@
 package app;
 // Zadania 1 & 2
-import tasks.interfaces.Exportable;
-import tasks.interfaces.PaymentMethod;
-import tasks.interfaces.Savable;
-import tasks.shapes.Shape;
-import tasks.shapes.Triangle;
+import tasks.interfaces.*;
 import tasks.shapes.Circle;
 import tasks.shapes.Rectangle;
+import tasks.shapes.Shape;
+import tasks.shapes.Triangle;
 // Zadanie 3
 import tasks.employees.Developer;
 import tasks.employees.Employee;
 import tasks.employees.Manager;
 import tasks.employees.Salesperson;
 // Zadanie 4 - 6
-import tasks.interfaces.Printable;
 import tasks.documents.Invoice;
-import tasks.documents.Ticket;
 import tasks.documents.Report;
-
+import tasks.documents.Ticket;
 // Zadanie 7
 import tasks.letters.C;
-
 // Zadanie 8
 import tasks.filetypes.TextDocument;
-
 // Zadanie 12
-import tasks.payments.OrderService;
-import tasks.payments.TransferPayment;
 import tasks.payments.BlikPayment;
 import tasks.payments.CardPayment;
+import tasks.payments.OrderService;
+import tasks.payments.TransferPayment;
+// Zadanie 13 && 14
+import tasks.interfaces.Storage;
+import tasks.storages.ReportService;
+import tasks.storages.DatabaseStorage;
+import tasks.storages.FileStorage;
+import tasks.storages.ConsoleStorage;
+
+
 
 public class Main {
     public static void main(String[] args) {
@@ -123,5 +125,54 @@ public class Main {
             order.checkOut(12.5);
         }*/
 
+        // Zadanie 13 && 14
+        /*Storage[] storages = {
+                new DatabaseStorage(),
+                new ConsoleStorage(),
+                new FileStorage()
+        };
+
+        ReportService[] repServices = new ReportService[3];
+        for(int i = 0; i < 3; i++){
+            repServices[i] = new ReportService(storages[i]);
+        }
+        for (ReportService rep : repServices){
+            rep.generateReport();
+        }*/
+
+        // Zadanie 15
+        /*
+         Shape - Klasa abstrakcyjna
+         -- Potrzebny wspólny stan (np.nazwa)
+         -- Istnieje IS-A (Circle IS-A shape)
+         -- wszystkie korzystające podklasy są ściśle związane
+
+         Printable - interfejs
+         -- kontrakt może dotyczyć wielu niezwiązanych klas
+
+         Employee - Klasa abstrakcyjna
+         -- Potrzebny wspólny stan (np.nazwisko)
+         -- Istnieje IS-A (Manager IS-A employee)
+         -- wszystkie korzystające podklasy są ściśle związane
+
+         Comparable - interfejs
+         -- kontrakt może dotyczyć wielu niezwiązanych klas
+
+         Vehicle - Klasa abstrakcyjna
+         -- Potrzebny wspólny stan (np.nazwa)
+         -- Istnieje IS-A (Car IS-A vehicle)
+         -- wszystkie korzystające podklasy są ściśle związane
+
+         Encryptable - interfejs
+        -- kontrakt może dotyczyć wielu niezwiązanych klas
+
+        NotificationSender - interfejs
+        -- kontrakt może dotyczyć wielu niezwiązanych klas
+
+        Account - Klasa abstrakcyjna
+        -- Potrzebny wspólny stan (np. balans)
+        -- Istnieje IS-A (DebitAccount IS-A Account)
+        -- wszystkie korzystające podklasy są ściśle związane
+        */
     }
 }
